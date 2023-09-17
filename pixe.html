@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixeljoy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <style>
+    .horizontalmenu::-webkit-scrollbar{
+      height: 0
+    }
+    .horizontalmenu{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-[Public Sans] box-border bg-[#e5e5e5] pt-[60px] w-full h-screen">
+  <header class="bg-white fixed w-[100%] mx-auto top-0 right-0 z-10 px-[8%] py-[15px]">
+    
+    <nav class="md:flex md:items-center md:justify-between">
+
+      <div class="flex justify-between items-center w-full">
+        <span class="text-2xl">
+         <img class="inline" src="pixel/pixel.png" alt="pixel">
+        Pixljoy</span>
+
+        <span class="text-3xl cursor-pointer mx-2 block lg:hidden" id="hamburger-icon">
+          <ion-icon name="menu-outline" onclick="showMenu(this)"></ion-icon>
+        </span>
+        <span class="hidden text-3xl cursor-pointer mx-2 block lg:hidden" id="cancel-icon">
+          <span onclick="hideMenu(this)" class="text-black font-semibold">X</span>
+        </span>
+    </div>
+
+    
+
+    <ul class="hidden lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute bg-white w-full left-0 lg:w-full lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Products</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Company</a></li>
+        <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Careers</a></li>
+    </ul>
+
+    <div class="hidden lg:flex lg:items-center lg:justify-end bg-white w-full">
+      <div>
+        <a href="" class="text-xl font-medium hover:text-gray-500 duration-500 my-6 block">Sign In</a>
+      </div>
+      <div>
+        <button class="bg-[#4468ff] text-white font-medium px-6 py-2 rounded ml-4 hover:bg-[#065dbb]">Get Started</button>
+      </div>
+    </div>
+    <ul class="hidden absolute bg-white w-full left-0 md:py-0 py-4 md:pl-0 pl-7 top-[0] transition-all ease-in duration-500"
+      id="mobilelist"
+    >
+      <li class="my-6 "><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Products</a></li>
+      <li class="my-6"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Company</a></li>
+      <li class="my-6"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Careers</a></li>
+      <li class="my-6"><a href="" class="text-xl font-medium hover:text-gray-500 duration-500 text-xl">Sign In</a></li>
+      <li><button class="bg-[#4468ff] text-white font-medium px-6 py-2 rounded hover:bg-[#065dbb]">Get Started</button></li>
+  </ul>
+    </nav>
+  </header>
+  <main>
+   <section class="bg-[#f3f5ff] pt-20 px-10">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold mb-8 lg:w-[40%] lg:mx-auto">Mine The Trapped Value In Links You Share</h1>
+      <p class="mb-8 text-xl lg:w-[50%] lg:mx-auto font-normal text-[#595959] font-[Public Sans]">Over 2,000 brands and marketers use PixelJoy to extend their market reach and manage all branded links in one place.</p>
+      <button class="bg-[#4468ff] text-white font-medium px-6 py-2 rounded mb-14 hover:bg-[#065dbb]">Get me Started</button>
+    </div>
+    
+    <div class=" text-center">
+      <h2 class="text-2xl lg:w-[50%] lg:mx-auto font-medium text-[#595959] mb-8">Join Thousands of Brands Taking Advantage of PixelJoy Beyond Shortening URL But for Targeted Traffic As Well</h2>
+      <div class="flex flex-wrap items-center justify-center gap-12 mt-10">
+         <img class="bg-white w-[130px] h-[130px] aspect-[4/3] object-contain bg-cover p-6 rounded-full" src="pixel/google.png" alt="Google">
+         <img class="bg-white w-[130px] h-[130px] aspect-[4/3] object-contain bg-cover p-6 rounded-full" src="pixel/amazon.png" alt="Amazon">
+         <img class="bg-white w-[130px] h-[130px] aspect-[4/3] object-contain bg-cover p-6 rounded-full" src="pixel/slack.png" alt="Slack">
+         <img class="bg-white w-[130px] h-[130px] aspect-[4/3] object-contain bg-cover p-6 rounded-full" src="pixel/uber.png" alt="Uber Eat">
+         <img class="bg-white w-[130px] h-[130px] aspect-[4/3] object-contain bg-cover p-6 rounded-full" src="pixel/microsoft.png" alt="Microsoft">
+         <img class="bg-white w-[130px] h-[130px] aspect-[4/3] object-contain bg-cover p-6 rounded-full" src="pixel/tesla.png" alt="Tesla">
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row items-center gap-8 px-[12%] py-[15px] mt-20 pb-16 w-full">
+      <ul class="list-image-[url(pixel/check-2.png)] text-xl font-normal p-6">
+        <li class="list-image-[url(pixel/check-1.png)] mb-5 pl-5">Create and share custom short links</li>
+        <li class=" mb-5 pl-5">Add your CTA banner to ANY page you share</li>
+        <li class=" mb-5 pl-5">Retarget those who clicked shared links with Ads</li>
+        <li class=" mb-5 pl-5">Delete or edit destination URL of shared links anytime</li>
+        <li class=" mb-5 pl-5">Route users to specific destination URL based on <br> their data and much more…</li>
+        <a class="text-[#4468ff] font-medium" href="">See All Features <span class="ml-4">&#10095;</span></a>
+      </ul>
+
+      <img src="pixel/share.png" alt="..." class="block">
+    </div>
+   </section>
+
+   <section class="">
+    <div class="bg-[#f8f9ff] flex flex-col lg:flex-row gap-8 justify-between w-full py-14 border px-10 lg:pl-[7.5rem] lg:pr-[8.5rem]">
+      <div class="lg:pt-20 text-justify">
+        <h2 class="text-xl lg:text-3xl font-bold mb-4">Build Brand Equity with Branded Links</h2>
+        <p class="text-md lg:text-xl text-[#595959] lg:leading-relaxed">Establish trust with your audience and increase better in-email deliverability by sharing branded links, rather than some suspicious-looking combination of letters as link. PixelJoy lets you create short links with your brand name using a custom URL. You can as well take advantage of this for SEO by including relevant keywords in links.</p>
+      </div>
+      <img class="" src="pixel/dashboard.png" alt="...">
+    </div>
+
+    <div class="bg-white flex flex-col lg:flex-row gap-8 justify-between w-full py-14 border px-10 lg:pl-[7.5rem] lg:pr-[8.5rem]">
+      <img class="" src="pixel/dashboard.png" alt="...">
+      <div class="lg:pt-20 text-justify">
+        <h2 class="text-xl lg:text-3xl font-bold mb-4">Do You Curate Contents for Your Audience? Get Rewarded with Targeted Traffic</h2>
+        <p class="text-md lg:text-xl text-[#595959] lg:leading-relaxed">Add a Call-to-Action CTA to ANY Page You Share to drive targeted traffic to your site. Simply share curated or viral contents with branded short links in PixelJoy and your CTA banner will be automatically displayed on the destination page. Everyone who lands on the page with your link sees the CTA banner.</p>
+      </div>
+    </div>
+
+    <div class="bg-[#f8f9ff] flex flex-col lg:flex-row gap-8 justify-between w-full py-14 border px-10 lg:pl-[7.5rem] lg:pr-[8.5rem]">
+      <div class="lg:pt-20 text-justify">
+        <h2 class="text-xl lg:text-3xl font-bold mb-4 ">Manage All Links In A Centralized Dashboard</h2>
+        <p class="text-md lg:text-xl text-[#595959] lg:leading-relaxed">Create and edit branded links in bulk right from PixelJoy while keeping them organized with tags for easy search. You can set link expiration and edit destination URL if need arises right from PixelJoy dashboard without having to send out another link.</p>
+      </div>
+      <img class="" src="pixel/dashboard.png" alt="...">
+    </div>
+
+    <div class="bg-white flex flex-col lg:flex-row gap-8 justify-between w-full py-14 border px-10 lg:pl-[7.5rem] lg:pr-[8.5rem]">
+      <img class="" src="pixel/dashboard.png" alt="...">
+      <div class="lg:pt-20 text-justify">
+        <h2 class="text-xl lg:text-3xl font-bold mb-4">Turn Links Into Data Well</h2>
+        <p class="text-md lg:text-xl text-[#595959] lg:leading-relaxed">Add retargeting pixels to links to get clicks for pennies with retargeting social ads. Anyone who clicks is automatically looped into your marketing funnel. You can as well do an extensive tracking of links for valuable insights by adding custom UTM parameters to short links in PixelJoy, from analytics tools such as Google Analytics or KissMetric.</p>
+      </div>
+    </div>
+   </section>
+   
+   <section class="">
+    <div class="bg-[#f3f5ff] py-14">
+      <h3 class="text-center pt-10 text-3xl font-bold">There is More!</h3>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-center py-10 px-16 lg:px-0 lg:w-[80%] lg:mx-auto border lg:gap-16">
+        <div class="bg-white relative flex flex-col items-center justify-center rounded-2xl text-center px-4 py-8">
+          <img class="bg-[#4468ff] p-4 rounded-lg mb-8" src="pixel/team.png" alt="...">
+          <h4 class="font-semibold pb-2">Team Collaboration</h4>
+          <p>Add Team members onto your account and define their access level. Track team activities on account with Audit Log</p>
+        </div>
+        <div class="bg-white relative flex flex-col items-center justify-center rounded-2xl text-center px-4 py-8">
+          <img class="bg-[#ff835e] p-4 rounded-lg mb-8" src="pixel/Domains.png" alt="...">
+          <h4 class="font-semibold pb-2">Multiple Domains  Management</h4>
+          <p>Set-up and manage varieties of domain names in PixelJoy for custom short links. Encrypt with SSL certificates at no cost. Manage redirects.</p>
+        </div>
+        <div class="bg-white relative flex flex-col items-center justify-center rounded-2xl text-center px-4 py-8">
+          <img class="bg-[#77cc23] p-4 rounded-lg mb-8" src="pixel/chat.png" alt="...">
+          <h4 class="font-semibold pb-2">Training & Support</h4>
+          <p>All the support you need, from knowledge/training resources to email support and direct onboarding support.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#4468FF] px-4 py-20 px-10 text-white relative">
+      <div class="text-center mb-6">
+        <h2 class="text-xl lg:text-3xl font-bold mb-4">Testimonial</h2>
+        <p class="mb-8 text-xl lg:w-[50%] lg:mx-auto font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      
+      <section class="horizontalmenu flex flex-row gap-8 overflow-x-auto lg:w-[75%] lg:mx-auto lg:px-10" id="horizontalmenu">
+        <button onclick="scrollMenu('left')" class="hidden lg:block absolute top-[50%] translate-x-[-50%] left-[4rem]">
+          <i class='bx bx-chevron-left' style='color:#ffffff'></i>
+        </button>
+        <button onclick="scrollMenu('right')" class="hidden lg:block absolute top-[50%] translate-x-[-50%] right-[4rem]">
+          <i class='bx bx-chevron-right' style='color:#ffffff'></i>
+        </button>
+        <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+          <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+            <i class='bx bxs-quote-left' style='color:#fff'></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex gap-4 items-start mt-4">
+            <img src="img/image-2.png" alt="...">
+            <div>
+              <p>Dustin Simmmons, Product Designer</p>
+              <p>Lorem ipsum dolor</p>
+            </div>
+            </div>
+          </div>
+          <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+            <i class='bx bxs-quote-left' style='color:#fff'></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex gap-4 items-start mt-4">
+            <img src="img/image-2.png" alt="...">
+            <div>
+              <p>Dustin Simmmons, Product Designer</p>
+              <p>Lorem ipsum dolor</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+          <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+            <i class='bx bxs-quote-left' style='color:#fff'></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex gap-4 items-start mt-4">
+            <img src="img/image-2.png" alt="...">
+            <div>
+              <p>Dustin Simmmons, Product Designer</p>
+              <p>Lorem ipsum dolor</p>
+            </div>
+            </div>
+          </div>
+          <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+            <i class='bx bxs-quote-left' style='color:#fff'></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex gap-4 items-start mt-4">
+            <img src="img/image-2.png" alt="...">
+            <div>
+              <p>Dustin Simmmons, Product Designer</p>
+              <p>Lorem ipsum dolor</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+          <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+            <i class='bx bxs-quote-left' style='color:#fff'></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex gap-4 items-start mt-4">
+            <img src="img/image-2.png" alt="...">
+            <div>
+              <p>Dustin Simmmons, Product Designer</p>
+              <p>Lorem ipsum dolor</p>
+            </div>
+            </div>
+          </div>
+          <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+            <i class='bx bxs-quote-left' style='color:#fff'></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex gap-4 items-start mt-4">
+            <img src="img/image-2.png" alt="...">
+            <div>
+              <p>Dustin Simmmons, Product Designer</p>
+              <p>Lorem ipsum dolor</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="text-center pt-16 pb-12 px-14 bg-[#f3f5ff]">
+      <h2 class="text-2xl font-semibold pb-4">Ready To Put Links To Work For Your Business?</h2>
+      <p class="text-sm lg:text-xl text-[#595959] font-[Public Sans]">No Technical Knowledge whatsoever is required.</p>
+      <button class="bg-[#4468ff] text-white font-medium px-6 py-2 rounded my-8 hover:bg-[#065dbb]">Get me Started</button>
+      <div class="flex gap-4 items-center justify-center">
+        <img class="" src="pixel/money-hand.png" alt="...">
+          <span class="text-[#4468ff] text-xl font-semibold">
+            30-days Full Money-back Guarantee
+          </span>
+    </div>
+    </div>
+   </section>
+</main>
+<footer>
+  <div class="bg-white pt-[50px] px-[8%] pb-[30px]">
+    <div class="footer grid grid-cols-[repeat(auto-fit,_minmax(200px,_auto))] gap-12">
+      <div>
+        <h4 class="mb-[1.5rem] text-xl font-medium">PRODUCT</h4>
+          <ul>
+              <li class="mb-[10px] text-[#595959]"><a href="#">Features</a></li>
+              <li class="mb-[10px] text-[#595959]"><a href="#">Pricing</a></li>
+              <li class="mb-[10px] text-[#595959]"><a href="#">Create a FREE account</a></li>
+              <li class="mb-[10px] text-[#595959]"><a href="#">Privacy Policy & GDPR</a></li>
+              <li class="mb-[10px] text-[#595959]"><a href="#">Terms of Service</a></li>
+          </ul>
+      </div>
+      <div>
+        <h4  class="mb-[1.5rem] text-xl font-medium">JOYWORKS</h4>
+          <ul>
+            <li class="mb-[10px] text-[#595959]"><a href="#">About Us</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Pixeljoy</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Blog</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Coutact Us</a></li>
+          </ul>
+      </div>
+      <div>
+        <h4 class="mb-[1.5rem] text-xl font-medium">SUPPORT & TRAINING</h4>
+          <ul>
+            <li class="mb-[10px] text-[#595959] block hover:translate-y-[-3px]"><a href="#">Support</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Knowledgdebase</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Log In</a></li>
+          </ul>
+      </div>
+      <div>
+        <h4 class="mb-[1.5rem] text-xl font-medium">PIXELJOY vs</h4>
+          <ul>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Snip.ly</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Rebrandly</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Clickmeter</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Replug.io</a></li>
+            <li class="mb-[10px] text-[#595959]"><a href="#">Bitly</a></li>
+          </ul>
+      </div>
+
+      <div>
+        <h4 class="mb-[1.5rem] text-xl font-medium">SOCIAL MEDIA CONNECT</h4>
+            <a class="bg-[#1976d2] mr-2 py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-facebook' style='color:#ffffff' ></i></i></a>
+            <a class="bg-[#9254de] mr-2  py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-instagram-alt' style='color:#ffffff' ></i></a>
+            <a class="bg-[#1da1f2] mr-2  py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-twitter' style='color:#ffffff' ></i></a>
+            <a class="bg-[#1976d2] mr-2  py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-linkedin' style='color:#ffffff' ></i></a>
+            <a class="bg-[#f44336] py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-youtube' style='color:#ffffff' ></i></a>
+      </div>
+    </div>
+
+    <div class="border-t border-[#d9d9d9] my-8"></div>
+    <div class="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center pb-10">
+      <div class="flex flex-col gap-4 lg:gap-6 lg:flex-row lg:items-center">
+        <div class="flex gap-2 items-center">
+          <img src="pixel/pixel.png" alt="...">
+          <p >Pixeljoy</p>
+        </div>
+        <p>Copyright &copy; 2020-2025 Joyworks Company. All Rights Reserved</p>
+      </div>
+      <div class="flex gap-2 items-center">
+        <img src="pixel/usa.png" alt="flag">
+        <p>English<i class='bx bx-chevron-down' ></i></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function showMenu(e){
+    let list = document.getElementById("mobilelist")
+    let hamburgerIcon = document.getElementById("hamburger-icon")
+    let cancelIcon = document.getElementById("cancel-icon")
+    hamburgerIcon.classList.remove('block')
+    hamburgerIcon.classList.add("hidden")
+    cancelIcon.classList.remove('hidden')
+    cancelIcon.classList.add('block')
+    list.classList.remove('hidden')
+    list.classList.add('block')
+    list.classList.add('top-[60px]')
+  }
+  function hideMenu(e){
+    let list = document.getElementById("mobilelist")
+    let hamburgerIcon = document.getElementById("hamburger-icon")
+    let cancelIcon = document.getElementById("cancel-icon")
+    hamburgerIcon.classList.add('block')
+    hamburgerIcon.classList.remove("hidden")
+    cancelIcon.classList.add('hidden')
+    cancelIcon.classList.remove('block')
+    list.classList.remove('block')
+    list.classList.add('hidden')
+    list.classList.add('top-[0]')
+  }
+  function scrollMenu(str){
+    let horizontalMenu = document.getElementById('horizontalmenu')
+    if(str === 'left'){
+      horizontalmenu.scrollLeft -= 400
+    }else if(str === 'right'){
+      horizontalmenu.scrollLeft += 400
+    }
+  }
+</script>
+</body>
+</html>

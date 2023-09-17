@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyworks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+      .horizontalmenu::-webkit-scrollbar{
+        height: 0
+      }
+      .horizontalmenu{
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body class="font-['Public Sans', sans-serif] box-border bg-[#e5e5e5] p-0 m-0 w-full h-screen">
+  
+    <header class="bg-white fixed w-[100%] mx-auto top-0 right-0 z-10 px-[8%] py-[15px]">
+    
+        <nav class="md:flex md:items-center md:justify-between">
+    
+          <div class="flex justify-between items-center w-full">
+            <span class="text-2xl">
+             <img class="inline" src="Joyworks/joy-logo.png" alt="Joyworks">
+            Joyworks</span>
+    
+            <span class="text-3xl cursor-pointer mx-2 block lg:hidden" id="hamburger-icon">
+              <ion-icon name="menu-outline" onclick="showMenu(this)"></ion-icon>
+            </span>
+            <span class="hidden text-3xl cursor-pointer mx-2 block lg:hidden" id="cancel-icon">
+              <span onclick="hideMenu(this)" class="text-black font-semibold">X</span>
+            </span>
+        </div>
+    
+        
+    
+        <ul class="hidden lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute bg-white w-full left-0 lg:w-full lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Products</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Company</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Careers</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">support</a></li>
+        </ul>
+    
+        <div class="hidden lg:flex lg:items-center lg:justify-end bg-white w-full">
+          <div>
+            <a href="" class="text-xl font-medium hover:text-gray-500 duration-500 my-6 block">Sign In</a>
+          </div>
+          <div>
+            <button class="bg-[#4468ff] text-white font-medium px-6 py-2 rounded ml-4 hover:bg-[#065dbb]">Get Started</button>
+          </div>
+        </div>
+        <ul class="hidden absolute bg-white w-full left-0 md:py-0 py-4 md:pl-0 pl-7 top-[0] transition-all ease-in duration-500"
+          id="mobilelist"
+        >
+          <li class="my-6 "><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Products</a></li>
+          <li class="my-6"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Company</a></li>
+          <li class="my-6"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Careers</a></li>
+          <li class="my-6"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">support</a></li>
+          <li class="my-6"><a href="" class="text-xl font-medium hover:text-gray-500 duration-500 text-xl">Sign In</a></li>
+          <li><button class="bg-[#4468ff] text-white font-medium px-6 py-2 rounded hover:bg-[#065dbb]">Get Started</button></li>
+      </ul>
+        </nav>
+      </header>
+
+    <main>
+        <div>
+            <div class="bg-slate-50 flex flex-col lg:flex-row gap-8 justify-between w-full pt-24 lg:pt-[14rem] px-10 lg:px-24 pb-20">
+              <div class="lg:pt-20 text-justify">
+                <h2 class="text-xl lg:text-3xl font-bold mb-4">Growing Businesses Online Shouldn&#8217;t Be So Hard</h2>
+                <p class="text-md lg:text-xl text-[#595959] lg:leading-relaxed">And we have built tools to ensure it is never hard</p> 
+                <p class="text-md lg:text-xl text-[#595959] lg:leading-relaxed">again. Even for non-techies. Our tools remove</p> 
+                <p class="text-md lg:text-xl text-[#595959] lg:leading-relaxed">the hassles in online marketing to make real</p> 
+                <p class="text-md lg:text-xl text-[#595959] lg:leading-relaxed mb-6">results inevitable.</p>
+                <button class="bg-[#4468ff] text-white text-xl font-medium px-7 py-3.5 rounded-md hover:bg-[#065dbb]">Get Started</button>
+              </div>
+              <img src="Joyworks/grow.png" alt="Growing Business">
+            </div>
+
+            <div class="bg-[rgba(255,255,255,0.25)] pt-16">
+              <div class="bg-white text-center  mx-auto lg:mx-auto w-[80%] py-4 lg:py-6 lg:w-[60%]">
+                <h2 class="text-xl lg:text-3xl font-bold mb-4 px-4">Give Your Products and Services a Head Start Online</h2>
+                <P class="text-md lg:text-xl lg:px-2 text-[#595959] lg:leading-relaxed ">JoyWorks offers easy-to-use web-based platforms for Online Entrepreneurs and Internet Marketers to fast-track their marketing efforts into real results.</P>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center pt-10 px-10 pb-16 lg:w-[80%] lg:mx-auto">
+                <div class="bg-white py-8 px-14 relative rounded-xl h-full">
+                  <div class="absolute top-6 left-8 lg:left-14 flex items-center gap-2">
+                    <img src="img/funnel-logo.png" alt="Funneljoy" class="w-[49px] h-[49px]">
+                    <p class="text-2xl font-semibold">Funneljoy</p>
+                  </div>
+                  <ul class="list-image-[url(joyworks/check-3.png)] text-xl font-normal p-2 lg:p-6 mt-14">
+                    <li class="mb-5 pl-2 lg:pl-5">Create a complete funnel from opt-in, sales pages to memberships</li>
+                    <li class="mb-5 pl-2 lg:pl-5">Drag & drop elements to build pages in the funnel</li>
+                    <li class="mb-5 pl-2 lg:pl-5">100+ free funnel templates to choose from</li>
+                    <li class="mb-5 pl-2 lg:pl-5">Free ultra-fast and secure hosting</li>
+                  </ul>
+                  <a class="text-[#ffa031] font-medium" href="#">Learn More <span class="ml-4">&#10095;</span></a>
+                </div>
+                <div class="bg-white py-8 px-14 relative rounded-xl h-full">
+                  <div class="absolute top-6 left-8 lg:left-12 flex items-center gap-2" >
+                    <img src="Joyworks/pixljoy.png" alt="Pixeljoy" class="w-[49px] h-[49px]">
+                    <p class="text-2xl font-semibold">Pixljoy</p>
+                  </div>
+                  <ul class="list-image-[url(joyworks/check.png)] text-xl font-normal p-2 lg:p-6 mt-16">
+                    <li class="mb-5 pl-2 lg:pl-5">Create and share branded short URLs</li>
+                    <li class="mb-5 pl-2 lg:pl-5">Boost remarketing campaigns with link retargeting</li>
+                    <li class="mb-5 pl-2 lg:pl-5">Manage all links and URLs in one place</li>
+                    <li class="mb-5 pl-2 lg:pl-5">Monitor Traffic sources and clicks with link tracking</li>
+                  </ul>
+                  <a class="text-[#4468ff] font-medium" href="#">Learn More <span class="ml-4">&#10095;</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 flex flex-col lg:flex-row gap-12 justify-between w-full py-20 px-10 lg:px-24 ">
+              <img src="Joyworks/unlock-Grow.png" alt="unlock">
+              <div class="lg:pt-20 pb-10 text-justify">
+                <h2 class="text-xl lg:text-3xl lg:w-[70%] lg:mx-auto lg:pl-16 font-bold mb-4">Unlock Remarkable Growth</h2>
+                <p class="text-md lg:text-xl lg:w-[70%] lg:mx-auto text-[#595959] lg:leading-relaxed">JoyWorks products are built to make growth happen. From providing an all-in-one platform with which you can lay all the bricks to reach and convert your target audience, to a platform that lets you manage and turn your links into a growth tool. One thing is certain: you are set up to unlock the remarkable growth of your products and services online.</p>
+              </div>
+            </div>
+
+            <div class="bg-[#017BFF] px-4 py-20 px-24 text-white relative">
+              <div class="text-center mb-6">
+                <h2 class="text-xl lg:text-3xl font-bold mb-4">What Customers are Saying</h2>
+                <p class="mb-8 text-xl lg:w-[50%] lg:mx-auto font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+              <div class="horizontalmenu flex flex-row gap-8 overflow-x-auto lg:w-[75%] lg:mx-auto lg:px-10" id="horizontalmenu">
+                <button onclick="scrollMenu('left')" class="hidden lg:block absolute top-[50%] translate-x-[-50%] left-[4rem]">
+                  <i class='bx bx-chevron-left' style='color:#ffffff'></i>
+                </button>
+                <button onclick="scrollMenu('right')" class="hidden lg:block absolute top-[50%] translate-x-[-50%] right-[4rem]">
+                  <i class='bx bx-chevron-right' style='color:#ffffff'></i>
+                </button>
+                <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+                  <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                    <i class='bx bxs-quote-left' style='color:#fff'></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="flex gap-4 items-start mt-4">
+                    <img src="img/image-2.png" alt="...">
+                    <div>
+                      <p>Dustin Simmmons, Product Designer</p>
+                      <p>Lorem ipsum dolor</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                    <i class='bx bxs-quote-left' style='color:#fff'></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="flex gap-4 items-start mt-4">
+                    <img src="img/image-2.png" alt="...">
+                    <div>
+                      <p>Dustin Simmmons, Product Designer</p>
+                      <p>Lorem ipsum dolor</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+                  <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                    <i class='bx bxs-quote-left' style='color:#fff'></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="flex gap-4 items-start mt-4">
+                    <img src="img/image-2.png" alt="...">
+                    <div>
+                      <p>Dustin Simmmons, Product Designer</p>
+                      <p>Lorem ipsum dolor</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                    <i class='bx bxs-quote-left' style='color:#fff'></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="flex gap-4 items-start mt-4">
+                    <img src="img/image-2.png" alt="...">
+                    <div>
+                      <p>Dustin Simmmons, Product Designer</p>
+                      <p>Lorem ipsum dolor</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+                  <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                    <i class='bx bxs-quote-left' style='color:#fff'></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="flex gap-4 items-start mt-4">
+                    <img src="img/image-2.png" alt="...">
+                    <div>
+                      <p>Dustin Simmmons, Product Designer</p>
+                      <p>Lorem ipsum dolor</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                    <i class='bx bxs-quote-left' style='color:#fff'></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="flex gap-4 items-start mt-4">
+                    <img src="img/image-2.png" alt="...">
+                    <div>
+                      <p>Dustin Simmmons, Product Designer</p>
+                      <p>Lorem ipsum dolor</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+            <div class="bg-[#ffb75d] flex flex-col lg:flex-row gap-12 justify-between w-full py-20 px-10 lg:px-24 ">
+                <div class="lg:pt-20 pb-10 text-white text-justify">
+                  <h2 class="text-xl lg:text-3xl lg:w-[70%] lg:mx-auto font-bold mb-4">Stripped of All Complexities</h2>
+                  <p class="text-md lg:text-xl lg:w-[70%] lg:mx-auto lg:leading-relaxed">We get it. You are an entrepreneur and a marketer, not a Developer. So, we have made JoyWorks products ridiculously easy-to-use for non-coders. You don&#8217;t need a technical team to set up and use any of JoyWorks products. You can now establish and manage your presence at all touch-points in your customers' journey with a simplified funnel builder and links management tool.</p>
+                </div>
+                <img src="Joyworks/sttipped.png" alt="...">
+            </div>
+
+            <div class="bg-[rgba(255,255,255,0.25)] text-center py-20">
+              <h2 class="text-xl lg:text-3xl font-bold mb-4">Trusted By Businesses Like Yours</h2>
+              <div class="flex flex-wrap items-center justify-center gap-12 mt-10">
+                <img class="grayscale" src="Joyworks/logo.png" alt="...">
+                <img class="grayscale" src="Joyworks/amazon.png" alt="...">
+                <img class="grayscale" src="Joyworks/google.png" alt="...">
+                <img class="grayscale" src="Joyworks/apple.png" alt="...">
+                <img class="grayscale" src="Joyworks/sumsung.png" alt="...">
+                <img class="grayscale" src="Joyworks/ibm.png" alt="...">
+            </div>
+            </div>
+
+                <div class="text-white bg-[#1a51ff] text-center py-20">
+                    <h2 class="text-xl lg:text-3xl font-bold mb-4">Start Growing At Remarkable Pace</h2>
+                    <p class="text-md lg:text-xl lg:w-[35%] lg:mx-auto lg:leading-relaxed">We remove roadblocks to growing your business online, so you can start getting real results.</p>
+                    <button class="bg-white text-[#1a51ff] text-2xl font-medium mt-8 px-7 py-3.5 rounded-md hover:bg-[#065dbb]">Get Started</button>
+                </div>
+        </div>
+    </main>
+    <footer>
+      <div class="bg-white pt-[50px] px-[8%] pb-[30px]">
+        <div class="footer grid grid-cols-[repeat(auto-fit,_minmax(200px,_auto))] gap-12">
+          <div>
+            <h4 class="mb-[1.5rem] text-xl font-medium">PRODUCT</h4>
+              <ul>
+                  <li class="mb-[10px] text-[#595959]"><a href="#">Features</a></li>
+                  <li class="mb-[10px] text-[#595959]"><a href="#">Pricing</a></li>
+                  <li class="mb-[10px] text-[#595959]"><a href="#">Create a FREE account</a></li>
+                  <li class="mb-[10px] text-[#595959]"><a href="#">Privacy Policy & GDPR</a></li>
+                  <li class="mb-[10px] text-[#595959]"><a href="#">Terms of Service</a></li>
+              </ul>
+          </div>
+          <div>
+            <h4  class="mb-[1.5rem] text-xl font-medium">JOYWORKS</h4>
+              <ul>
+                <li class="mb-[10px] text-[#595959]"><a href="#">About Us</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Pixeljoy</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Blog</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Coutact Us</a></li>
+              </ul>
+          </div>
+          <div>
+            <h4 class="mb-[1.5rem] text-xl font-medium">SUPPORT & TRAINING</h4>
+              <ul>
+                <li class="mb-[10px] text-[#595959] block hover:translate-y-[-3px]"><a href="#">Support</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Knowledgdebase</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Log In</a></li>
+              </ul>
+          </div>
+          <div>
+            <h4 class="mb-[1.5rem] text-xl font-medium">PIXELJOY vs</h4>
+              <ul>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Snip.ly</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Rebrandly</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Clickmeter</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Replug.io</a></li>
+                <li class="mb-[10px] text-[#595959]"><a href="#">Bitly</a></li>
+              </ul>
+          </div>
+    
+          <div>
+            <h4 class="mb-[1.5rem] text-xl font-medium">SOCIAL MEDIA CONNECT</h4>
+                <a class="bg-[#1976d2] mr-2 py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-facebook' style='color:#ffffff' ></i></i></a>
+                <a class="bg-[#9254de] mr-2  py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-instagram-alt' style='color:#ffffff' ></i></a>
+                <a class="bg-[#1da1f2] mr-2  py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-twitter' style='color:#ffffff' ></i></a>
+                <a class="bg-[#1976d2] mr-2  py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-linkedin' style='color:#ffffff' ></i></a>
+                <a class="bg-[#f44336] py-0.5 px-1 rounded-md" href="#"><i class='bx bxl-youtube' style='color:#ffffff' ></i></a>
+          </div>
+        </div>
+        
+        <div class="border-t border-[#d9d9d9] my-8"></div>
+        <div class="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center pb-10">
+          <div class="flex flex-col gap-4 lg:gap-6 lg:flex-row lg:items-center">
+            <div class="flex gap-2 items-center">
+              <img src="pixel/pixel.png" alt="...">
+              <p class="text-2xl">Joyworks</p>
+            </div>
+            <p>Copyright &copy; 2020-2025 Joyworks Company. All Rights Reserved</p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <img src="pixel/usa.png" alt="flag">
+            <p>English<i class='bx bx-chevron-down' ></i></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+    <script>
+    function showMenu(e){
+    let list = document.getElementById("mobilelist")
+    let hamburgerIcon = document.getElementById("hamburger-icon")
+    let cancelIcon = document.getElementById("cancel-icon")
+    hamburgerIcon.classList.remove('block')
+    hamburgerIcon.classList.add("hidden")
+    cancelIcon.classList.remove('hidden')
+    cancelIcon.classList.add('block')
+    list.classList.remove('hidden')
+    list.classList.add('block')
+    list.classList.add('top-[60px]')
+  }
+  function hideMenu(e){
+    let list = document.getElementById("mobilelist")
+    let hamburgerIcon = document.getElementById("hamburger-icon")
+    let cancelIcon = document.getElementById("cancel-icon")
+    hamburgerIcon.classList.add('block')
+    hamburgerIcon.classList.remove("hidden")
+    cancelIcon.classList.add('hidden')
+    cancelIcon.classList.remove('block')
+    list.classList.remove('block')
+    list.classList.add('hidden')
+    list.classList.add('top-[0]')
+  }
+  function scrollMenu(str){
+    let horizontalMenu = document.getElementById('horizontalmenu')
+    if(str === 'left'){
+      horizontalmenu.scrollLeft -= 400
+    }else if(str === 'right'){
+      horizontalmenu.scrollLeft += 400
+    }
+  }
+    </script>
+</body>
+</html>

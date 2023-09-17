@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funneljoy Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <style>
+    .horizontalmenu::-webkit-scrollbar{
+      height: 0
+    }
+    .horizontalmenu{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-[Public Sans] bg-white w-full h-screen">
+    <!-- Navbar -->
+    <header class="bg-white fixed w-[100%] h-[60px] mx-auto top-0 right-0 z-[100] px-[8%] py-[15px]">
+    
+        <nav class="md:flex md: items-center md:justify-between">
+    
+          <div class="flex justify-between items-center">
+            <span class="text-2xl">
+             <img class="inline" src="Joyworks/joy-logo.png" alt="Joyworks">
+            Pixljoy</span>
+    
+            <span class="text-3xl cursor-pointer mx-2 block lg:hidden" id="hamburger-icon">
+              <ion-icon name="menu-outline" onclick="showMenu(this)"></ion-icon>
+            </span>
+            <span class="hidden text-3xl cursor-pointer mx-2 block lg:hidden" id="cancel-icon">
+              <span onclick="hideMenu(this)" class="text-black font-semibold">X</span>
+            </span>
+        </div>
+    
+        
+    
+        <ul class="hidden lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute bg-white w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Products</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Company</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Careers</a></li>
+            <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">support</a></li>
+        </ul>
+    
+        <div class="mx-4 md:my-0 z-[-1] md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7  md:opacity-100 opacity-0">
+          <a href="" class="text-xl font-medium hover:text-gray-500 duration-500 my-6">Sign In</a>
+          <button class="bg-[#4468ff] text-white font-medium px-6 py-2 rounded ml-4 hover:bg-[#065dbb]">Get Started</button>
+        </div>
+        <ul class="hidden absolute bg-white w-full left-0 md:py-0 py-4 md:pl-0 pl-7 top-[0] transition-all ease-in duration-500"
+          id="mobilelist"
+        >
+          <li class="my-6 "><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Products</a></li>
+          <li class="my-6"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Company</a></li>
+          <li class="my-6"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">Careers</a></li>
+          <li class="my-6"><a href="#" class="text-xl font-medium hover:text-gray-500 duration-500">support</a></li>
+          <li class="my-6"><a href="" class="text-xl font-medium hover:text-gray-500 duration-500 text-xl">Sign In</a></li>
+          <li><button class="bg-[#4468ff] text-white font-medium px-6 py-2 rounded hover:bg-[#065dbb]">Get Started</button></li>
+      </ul>
+        </nav>
+      </header>
+
+    <!-- Main page -->
+    <main>
+        
+        <div class="bg-[#fff6ec] pt-24 pb-16 px-12 lg:p-20">
+            <div class="circle-full [#ffa031]"></div>
+            <div class="outline-1 bg-[#9254de]"></div>
+            <div class="outline-2 bg-[#9254de]"></div>
+            <div class="outline-3 bg-[#ffa031]"></div>
+            <div class="circle-full-1 [#9254de]"></div>
+            <div class="circle-full-2 bg-[#ffa031]"></div>
+            <div class="outline-4 bg-[#9254de]"></div>
+            <div class="circle-full-3 bg-[#9254de]"></div>
+            <div class="circle-full-4 bg-[#9254de]"></div>
+            <div class="outline-4 bg-[#9254de]"></div>
+            <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+                <div class="">
+                    <h1 class="text-4xl lg:text-6xl font-medium mb-8">
+                        Sales Funnel Builder for Non-coders
+                    </h1>
+                    <p class="mb-6 text-xl font-normal">Jump-start leads conversion to sales with a ridiculously easy to use conversion funnel bulder.</p>
+                </div>
+                <div >
+                    <img class="max-w-ful w-full h-auto" src="img/video.png" alt="...">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 items-center mt-20">
+                <div class="relative mt-3 h-auto flex flex-col items-center justify-center">
+                    <img src="img/drag-drop.png" alt="Drag & Drop">
+                    <p>Drag & Drop to Build</p>
+                </div>
+                <div class="relative mt-3 h-auto flex flex-col items-center justify-center">
+                    <img src="img/love-edit.png" alt="Love & Edit">
+                    <p class="text-center">Bring the Pages You <br> Love & Edit</p>
+                </div>
+                <div class="relative mt-3 h-auto flex flex-col items-center justify-center">
+                    <img src="img/sales-tag.png" alt="Sales-page">
+                    <p>Pick from 100+ Proven <br> sales funnel templates</p>
+                </div>
+                <div class="relative mt-3 h-auto flex flex-col items-center justify-center">
+                    <img src="img/membership.png" alt="Membership">
+                    <p class="text-center">Build & Automate <br> Mwmbership Funnel</p>
+                </div>
+                <div class="relative mt-3 h-auto flex flex-col items-center justify-center">
+                    <img src="img/analytics.png" alt="Analytics">
+                    <p class="text-center">Track Performance <br> with Robust Analytics</p>
+                </div>
+            </div>
+            <div class="text-center mt-14 lg:mt-7">
+                <h1 class="text-4xl font-semibold mb-6">Build Better Conversion Funnels Faster</h1>
+                <p class="text-lg font-normal mb-8">We have solved the hardest part of turning leads to customers for you.</p>
+                <a href="#" class="bg-[#ffa031] text-white text-xl py-3 px-8 text-center rounded hover:bg-[#eb8d1e]">Try for Free</a>
+            </div>
+        </div>
+        
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center p-14">
+            <div>
+                <h1 class="text-4xl font-semibold mb-6">
+                    Take Leads By The Hand All The Way To Sales
+                </h1>
+                <p class="mb-3 text-xl font-normal">
+                    With pre-built sales funnel templates, FunnelJoy equips you with
+                    all funnel assets you need to hit the ground running with your campaign.
+                </p>
+                <ul class="text-xl font-normal p-6 list-image-[url(img/checkmark.png)]">
+                    <li class=" mb-5 pl-5">
+                        Have converting Pages and funnels set up on the fly.
+                    </li>
+                    <li class="mb-2 pl-5">
+                        Don't want to start from scratch? just clone page or entire funnel.
+                    </li>
+                    <li class="mb-2 pl-5">
+                        Increase average order value with Order Bumps and Upsells.
+                    </li>
+                    <li class="mb-2 pl-5">
+                        Nurture leads in funnel with automated emails and social media remareting.
+                    </li>
+                    <li class="mb-2 pl-5">
+                        Increase page conversions with exit-intent Pop-ups.
+                    </li>
+                    <li class="mb-2 pl-5">
+                        Optimize funnel with unlimited split-tests and real-time analytics.
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-[#fff6ec] items-center flex items-center justify-center h-[400px] md:h-[500px]">
+                <div class="relative w-[400px] h-full">
+                    <div class="z-10 rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-gradient-to-t from-[#ff85c0] to-[#85a5ff] absolute flex flex-col items-center justify-center text-white p-2 left-[50%] translate-x-[-50%] top-[30px]">
+                        <img class="pb-2 pl-6 lg:pl-8" src="img/arrows.png" alt="...">
+                        <span class="text-xs mx-auto pb-16 pl-6 lg:pl-14">Just Drag & Drop to Build</span>
+                    </div>
+                    <div class="z-20 rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-gradient-to-t from-[#f2b18f] to-[#ff7875] absolute flex flex-col items-start justify-start text-white p-2 top-[80px] md:top-[100px] left-[5%] md:left-[-5%] lg:top-[100px]">
+                        <img class="pt-14 pb-2 pl-14" src="img/cloud-arrow.png" alt="...">
+                        <span class="text-xs w-[50%] mx-auto">Import page from URL</span>
+                    </div>
+                    <div class="z-30 rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-gradient-to-t from-[#ff9c6e] to-[#ffc969] absolute flex flex-col items-center justify-center text-white p-2 bottom-[40px] left-[10%] md:left-[2%] lg:bottom-[60px]">
+                        <img class="pb-2" src="img/pen.png" alt="...">
+                        <span class="text-xs w-[75%] mx-auto">Make Quick Changes with in-line page editor</span>
+                    </div>
+                    <div class="z-40 rounded-full w-[150px] h-[150px] text-center md:w-[200px] md:h-[200px] bg-gradient-to-t from-[#91d5ff] to-[#40a9ff] absolute flex flex-col items-end justify-end text-white p-2 right-[10%] bottom-[40px] md:right-[2%] lg:bottom-[60px]">
+                        <h2 class="pb-2 pr-10">HTTP</h2>
+                        <span class="text-xs lg:w-[75%] mx-auto pb-10">Go extra with custom HTML & custom code embedding</span>
+                    </div>
+                    <div class="z-0 rounded-full w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-gradient-to-t from-[#85a5ff] to-[#40a9ff] absolute flex flex-col items-center justify-center text-white p-2 right-[5%] top-[80px] md:right-[-5%] md:top-[100px]">
+                        <img class="pl-10 pb-2" src="img/mdi_table_chart.png" alt="...">
+                        <span class="text-xs lg:w-[75%] mx-auto pl-12 pb-10">Pick from over 100+ templates</span>
+                    </div>
+                    <div class="z-50 rounded-full w-[130px] h-[130px] md:w-[150px] md:h-[150px] bg-white absolute flex flex-col items-center justify-center text-white p-2 left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] shadow-2xl shadow-transparent">
+                        <img class="pb-2" src="img/money.png" alt="...">
+                        <span class="text-xs text-center lg:w-[75%] mx-auto text-black">You're Never Paying a Developer for Funnel Again!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="text-center mt-7">
+                <h2 class="text-4xl font-semibold mb-6">
+                    All You Will Ever Need
+                </h2>
+            </div>
+            <div class="grid grid-cols-1  xl:grid-cols-2 gap-6 xl:gap-20 items-center py-14 px-14 xl:px-20">
+                    <div class="bg-[#fff6ec] items-center h-[600px]">
+                        <div class="relative h-full md:w-[500px] xl:w-full xl:max-w-[555px] md:mx-auto">
+                            <div class="absolute bg-white rounded-xl p-4 flex flex-col gap-4 items-center justify-center top-[220px] left-[5%] w-[130px] xl:w-[150px] h-[170px] md:left-[50%] md:translate-x-[-50%] md:top-[40px] md:h-[200px]">
+                                <img src="img/welcome-page.png" alt="welcome Page">
+                                <span class="text-sm">Welcome Page</span>
+                            </div>
+                            <div class="absolute bg-white rounded-xl p-4 flex flex-col gap-4 items-center justify-center top-[20px] left-[5%] w-[130px] xl:w-[150px] h-[170px] md:top-[100px] md:h-[200px]">
+                                <img src="img/sales-page.png" alt="sales Page">
+                                <span>Sales Page</span></div>
+                            <div class="absolute bg-white rounded-xl p-4 flex flex-col gap-4 items-center justify-center bottom-[10px] left-[5%] w-[130px] xl:w-[150px] h-[170px] md:h-[200px] md:bottom-[60px]">
+                                <img src="img/confirmation-page.png" alt="confirmation Page">
+                                <span class="text-sm">Confirmation Page</span>
+                            </div>
+                            <div class="absolute bg-white rounded-xl p-4 flex flex-col gap-4 items-center justify-center top-[220px] right-[5%] w-[130px] xl:w-[150px] h-[170px] md:left-[50%] md:translate-x-[-50%] md:top-[300px] md:h-[200px]">
+                                <img src="img/upsell-page.png" alt="upsell Page">
+                                <span class="text-sm">Upsell Page</span>
+                            </div>
+                            <div class="absolute bg-white rounded-xl p-4 flex flex-col gap-4 items-center justify-center top-[20px] right-[5%] w-[130px] xl:w-[150px] h-[170px] md:top-[100px] md:h-[200px]">
+                                <img src="img/download-page.png" alt="download Page">
+                                <span class="text-sm">Download Page</span>
+                            </div>
+                            <div class="absolute bg-white rounded-xl p-4 flex flex-col gap-4 items-center justify-center bottom-[10px] right-[5%] w-[130px] xl:w-[150px] h-[170px] md:h-[200px] md:bottom-[60px]">
+                                <img src="img/bonus-page.png" alt="bonus Page">
+                                <span class="text-sm">Bonus Page</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="text-xl font-normal p-6 list-image-[url(img/checkmark.png)]">
+                            <li class="mb-2 pl-5">
+                                Physical and Digital Products Sales
+                            </li>
+                            <li class="mb-2 pl-5">
+                                Subscription Products Sales
+                            </li>
+                            <li class="mb-2 pl-5">
+                                Marketing your service online 
+                            </li>
+                            <li class="mb-2 pl-5">
+                                Building a Loyal customer base
+                            </li>
+                        </ul>
+                    </div>
+            </div>   
+        </div>
+
+        
+        <div class="bg-[#ffab4a] px-4 py-14 text-white relative">
+            <div class="text-center mb-6">
+              <h2 class="text-xl lg:text-3xl font-bold mb-4">Testimonial</h2>
+              <p class="text-md lg:text-xl text-white lg:w-[50%] lg:mx-auto lg:leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <section class="horizontalmenu flex flex-row gap-8 overflow-x-auto lg:w-[75%] lg:mx-auto lg:px-10" id="horizontalmenu">
+              <button onclick="scrollMenu('left')" class="hidden lg:block absolute top-[50%] translate-x-[-50%] left-[4rem]">
+                <i class='bx bx-chevron-left' style='color:#ffffff'></i>
+              </button>
+              <button onclick="scrollMenu('right')" class="hidden lg:block absolute top-[50%] translate-x-[-50%] right-[4rem]">
+                <i class='bx bx-chevron-right' style='color:#ffffff'></i>
+              </button>
+              <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+                <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                  <i class='bx bxs-quote-left' style='color:#fff'></i>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="flex gap-4 items-start mt-4">
+                  <img src="img/image-2.png" alt="...">
+                  <div>
+                    <p>Dustin Simmmons, Product Designer</p>
+                    <p>Lorem ipsum dolor</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                  <i class='bx bxs-quote-left' style='color:#fff'></i>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="flex gap-4 items-start mt-4">
+                  <img src="img/image-2.png" alt="...">
+                  <div>
+                    <p>Dustin Simmmons, Product Designer</p>
+                    <p>Lorem ipsum dolor</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+                <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                  <i class='bx bxs-quote-left' style='color:#fff'></i>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="flex gap-4 items-start mt-4">
+                  <img src="img/image-2.png" alt="...">
+                  <div>
+                    <p>Dustin Simmmons, Product Designer</p>
+                    <p>Lorem ipsum dolor</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                  <i class='bx bxs-quote-left' style='color:#fff'></i>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="flex gap-4 items-start mt-4">
+                  <img src="img/image-2.png" alt="...">
+                  <div>
+                    <p>Dustin Simmmons, Product Designer</p>
+                    <p>Lorem ipsum dolor</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-6 items-center min-w-[600px] lg:min-w-[850px]">
+                <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                  <i class='bx bxs-quote-left' style='color:#fff'></i>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="flex gap-4 items-start mt-4">
+                  <img src="img/image-2.png" alt="...">
+                  <div>
+                    <p>Dustin Simmmons, Product Designer</p>
+                    <p>Lorem ipsum dolor</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="w-full bg-[rgba(255,255,255,0.25)] rounded-md p-4">
+                  <i class='bx bxs-quote-left' style='color:#fff'></i>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="flex gap-4 items-start mt-4">
+                  <img src="img/image-2.png" alt="...">
+                  <div>
+                    <p>Dustin Simmmons, Product Designer</p>
+                    <p>Lorem ipsum dolor</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Navbar -->
+            <div class="text-center">
+                <h1 class="pt-20 text-3xl mb-16">Create Winning Funnels with No Hassle and at No Cut-throat Price</h1>
+                <a href="#" class="text-white text-xl py-3 px-8 text-center rounded border-2 hover:bg-[#eb8d1e]">Try for Free</a>
+            </div>
+        </div>
+
+       
+        <div class="bg-[#fff6ec] pb-10"> 
+            <div class="text-center">
+                <h1 class="pt-20 text-4xl lg:w-[50%] lg:mx-auto px-4 font-medium">Automate Funnel with Seamless Integration eith Your Favorite Tool</h1>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center w-[60%] mx-auto mt-12 px-10 pb-8">
+                <div class="h-full bg-white relative mt-3 flex flex-col items-center justify-center py-10 rounded-md shadow-[#fad2a6]">
+                    <img class="w-[100px] pb-8" src="img/ESPs.png" alt="ESPs">
+                    <span class="text-center">Auto response with ESPs</span>
+                </div>
+                <div class="h-full bg-white relative mt-3 flex flex-col items-center justify-center py-10 rounded-md shadow-[#fad2a6]">
+                    <img class="w-[100px] pb-8" src="img/payment.png" alt="Payment Gateway">
+                    <span class="text-center px-1">Payment Gateway in One-click</span>
+                </div>
+                <div class="h-full bg-white relative mt-3 flex flex-col items-center justify-center py-10 rounded-md shadow-[#fad2a6]">
+                    <img class="w-[100px] pb-8" src="img/webinar.png" alt="Webinar Platforms">
+                    <span class="text-center">Webinar Platforms</span>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <a href="#" class="bg-[#ffa031] text-white text-xl py-3 px-8 text-center rounded hover:bg-[#eb8d1e]">Try for Free</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        </div>
+        <div class="bg-white pt-[50px] px-[8%] pb-[30px]">
+            <div class="footer grid grid-cols-[repeat(auto-fit,_minmax(200px,_auto))] gap-12">
+              <div>
+                <img src="img/funnel-logo.png" alt="funne-logo">
+                    <span>Funneljoy</span>
+                    <p>&copy; 2010 - 2020</p>
+                    <p>Privacy - Terms</p>
+              </div>
+              <div>
+                <h4  class="mb-[1.5rem] text-xl font-medium">Product</h4>
+                  <ul>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Product</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Product</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Product</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Product</a></li>
+                  </ul>
+              </div>
+              <div>
+                <h4 class="mb-[1.5rem] text-xl font-medium">Features</h4>
+                  <ul>
+                    <li class="mb-[10px] text-[#595959] block hover:translate-y-[-3px]"><a href="#">Features</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Features</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Features</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Features</a></li>
+                  </ul>
+              </div>
+              <div>
+                <h4 class="mb-[1.5rem] text-xl font-medium">Resources</h4>
+                  <ul>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Resources</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Resources</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Resourcesr</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Resources</a></li>
+                  </ul>
+              </div>
+        
+              <div>
+                <h4 class="mb-[1.5rem] text-xl font-medium">Company</h4>
+                <ul>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Company</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Company</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Company</a></li>
+                    <li class="mb-[10px] text-[#595959]"><a href="#">Company</a></li>
+                  </ul>
+              </div>
+            </div>
+    </footer>
+    <script>
+     function showMenu(e){
+    let list = document.getElementById("mobilelist")
+    let hamburgerIcon = document.getElementById("hamburger-icon")
+    let cancelIcon = document.getElementById("cancel-icon")
+    hamburgerIcon.classList.remove('block')
+    hamburgerIcon.classList.add("hidden")
+    cancelIcon.classList.remove('hidden')
+    cancelIcon.classList.add('block')
+    list.classList.remove('hidden')
+    list.classList.add('block')
+    list.classList.add('top-[60px]')
+  }
+  function hideMenu(e){
+    let list = document.getElementById("mobilelist")
+    let hamburgerIcon = document.getElementById("hamburger-icon")
+    let cancelIcon = document.getElementById("cancel-icon")
+    hamburgerIcon.classList.add('block')
+    hamburgerIcon.classList.remove("hidden")
+    cancelIcon.classList.add('hidden')
+    cancelIcon.classList.remove('block')
+    list.classList.remove('block')
+    list.classList.add('hidden')
+    list.classList.add('top-[0]')
+  }
+  function scrollMenu(str){
+    let horizontalMenu = document.getElementById('horizontalmenu')
+    if(str === 'left'){
+      horizontalmenu.scrollLeft -= 400
+    }else if(str === 'right'){
+      horizontalmenu.scrollLeft += 400
+    }
+  }
+    </script>
+</body>
+</html>
