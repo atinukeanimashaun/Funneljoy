@@ -31,10 +31,10 @@
             Pixljoy</span>
     
             <span class="text-3xl cursor-pointer mx-2 block lg:hidden" id="hamburger-icon">
-              <ion-icon name="menu-outline" onclick="showMenu(this)"></ion-icon>
+              <ion-icon name="menu-outline" onclick="toggleMenu()"></ion-icon>
             </span>
             <span class="hidden text-3xl cursor-pointer mx-2 block lg:hidden" id="cancel-icon">
-              <span onclick="hideMenu(this)" class="text-black font-semibold">X</span>
+              <span onclick="toggleMenu()" class="text-black font-semibold">X</span>
             </span>
         </div>
     
@@ -402,38 +402,36 @@
             </div>
     </footer>
     <script>
-     function showMenu(e){
-    let list = document.getElementById("mobilelist")
-    let hamburgerIcon = document.getElementById("hamburger-icon")
-    let cancelIcon = document.getElementById("cancel-icon")
-    hamburgerIcon.classList.remove('block')
-    hamburgerIcon.classList.add("hidden")
-    cancelIcon.classList.remove('hidden')
-    cancelIcon.classList.add('block')
-    list.classList.remove('hidden')
-    list.classList.add('block')
-    list.classList.add('top-[60px]')
-  }
-  function hideMenu(e){
-    let list = document.getElementById("mobilelist")
-    let hamburgerIcon = document.getElementById("hamburger-icon")
-    let cancelIcon = document.getElementById("cancel-icon")
-    hamburgerIcon.classList.add('block')
-    hamburgerIcon.classList.remove("hidden")
-    cancelIcon.classList.add('hidden')
-    cancelIcon.classList.remove('block')
-    list.classList.remove('block')
-    list.classList.add('hidden')
-    list.classList.add('top-[0]')
-  }
-  function scrollMenu(str){
-    let horizontalMenu = document.getElementById('horizontalmenu')
-    if(str === 'left'){
-      horizontalmenu.scrollLeft -= 400
-    }else if(str === 'right'){
-      horizontalmenu.scrollLeft += 400
+      function toggleMenu(){
+        let list = document.getElementById("mobilelist")
+        let hamburgerIcon = document.getElementById("hamburger-icon")
+        let cancelIcon = document.getElementById("cancel-icon")
+        if(hamburgerIcon.classList.contains('block')){    
+          hamburgerIcon.classList.remove('block')
+          hamburgerIcon.classList.add("hidden")
+          cancelIcon.classList.remove('hidden')
+          cancelIcon.classList.add('block')
+          list.classList.remove('hidden')
+          list.classList.add('block')
+          list.classList.add('top-[60px]')
+        }else{
+          hamburgerIcon.classList.add('block')
+          hamburgerIcon.classList.remove("hidden")
+          cancelIcon.classList.add('hidden')
+          cancelIcon.classList.remove('block')
+          list.classList.remove('block')
+          list.classList.add('hidden')
+          list.classList.add('top-[0]')
+        }
+      }
+    function scrollMenu(str){
+      let horizontalMenu = document.getElementById('horizontalmenu')
+      if(str === 'left'){
+        horizontalmenu.scrollLeft -= 400
+      }else if(str === 'right'){
+        horizontalmenu.scrollLeft += 400
+      }
     }
-  }
     </script>
 </body>
 </html>
